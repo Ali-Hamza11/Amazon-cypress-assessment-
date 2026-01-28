@@ -1,0 +1,38 @@
+# # Dependencies
+# node_modules
+
+# # Logs
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# lerna-debug.log*
+
+# # Cypress artifacts
+# cypress/videos
+# cypress/screenshots
+# cypress/results # if you save results here
+
+# # Environment variables
+# .env
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+
+# # Configuration (if it contains secrets)
+# # cypress.json
+# # cypress.env.json
+
+# # Test Reports
+# mochawesome-report
+# # Other ignored files and folders might be listed above
+# node_modules/
+# *.log
+
+# # Ignore the cypress.json file (if you want it ignored)
+# cypress.json
+# cypress.env.json
+# .vscode/settings.json
+# node_modules/
+# package.json
+# package-lock.json
