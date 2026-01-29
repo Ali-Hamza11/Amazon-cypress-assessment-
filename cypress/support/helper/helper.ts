@@ -1,15 +1,15 @@
- class helperfunction{
-     homepage(){
+class helperfunction {
+    homepage() {
         cy.visit('/').wait(4000);
-       
-    }   
-    searchbutton(){
-        cy.get('#nav-search-submit-button').click();
+
     }
- }
+    searchbutton() {
+        cy.get('#nav-search-submit-button').click({ force: true });
+    }
+}
 export default new helperfunction();
 
 
-export const productsearchbar={
-    searchbar: '#twotabsearchtextbox',
+export const searchbar = {
+    productsearch: '#twotabsearchtextbox',
 }

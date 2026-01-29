@@ -2,6 +2,14 @@
   "name": "my-ts-package",
   "version": "1.0.0",
   "description": "A sample TypeScript package",
+  "homepage": "https://github.com/Ali-Hamza11/Amazon-cypress-assessment-#readme",
+  "bugs": {
+    "url": "https://github.com/Ali-Hamza11/Amazon-cypress-assessment-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-Hamza11/Amazon-cypress-assessment-.git"
+  },
   "license": "ISC",
   "author": "Ali Hamza",
   "type": "module",
