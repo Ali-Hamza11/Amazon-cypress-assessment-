@@ -15,6 +15,9 @@ class USBhelper {
     productimage(){
         cy.get("#imgTagWrapperId").should("be.visible");
     }
+    productrating(){
+        cy.get("#averageCustomerReviews #acrPopover").should("be.visible")
+    }
 
 
 }

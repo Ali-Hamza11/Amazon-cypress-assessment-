@@ -1,9 +1,8 @@
-import 'cypress-xpath'
 import { eventNames } from 'process';
 class TVandVideo{
     hamburgerMenu() {
-        cy.get(".hm-icon-label",{timeout:5000}).click();
-        cy.contains("a","Television & Video").click();
+        cy.get(".hm-icon-label",{timeout:5000}).click({force:true});
+        cy.contains("a","Television & Video").click({force: true});
     }
     sortby(){
         cy.wait(5000);
