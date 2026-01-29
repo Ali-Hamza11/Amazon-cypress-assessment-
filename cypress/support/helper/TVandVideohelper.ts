@@ -1,4 +1,3 @@
-import { eventNames } from 'process';
 class TVandVideo {
     hamburgerMenu() {
         cy.get(".hm-icon-label", { timeout: 5000 }).click({ force: true });
