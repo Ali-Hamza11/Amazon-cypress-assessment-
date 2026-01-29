@@ -3,7 +3,7 @@ import helperfunction, { productsearchbar } from "../../support/helper/helper";
 import TVandVideo from "../../support/helper/TVandVideohelper";
 import USBhelper from "../../support/helper/USBhelper"
 describe('Verify that the user can add a product to the cart from Amazon.com', () => {
-    it.skip('should add a product to the cart', () => {
+    it('should add a product to the cart', () => {
         helperfunction.homepage();
         TVandVideo.hamburgerMenu();
         cy.get(productsearchbar.searchbar)
