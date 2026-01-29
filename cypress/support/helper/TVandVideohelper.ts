@@ -3,7 +3,7 @@ import { eventNames } from 'process';
 class TVandVideo{
     hamburgerMenu() {
         cy.get(".hm-icon-label",{timeout:5000}).click();
-        cy.contains("a","Television & Video").click({force: true});
+        cy.contains("a","Television & Video").click();
     }
     sortby(){
         cy.wait(5000);
@@ -12,10 +12,11 @@ class TVandVideo{
     }
     selectSecondHighestProduct() {
         
-    cy.get('[aria-label*="Samsung Vision AI Smart TV (2025 Model"]',{timeout:6000}).click();
-    cy.scrollTo('bottom')
-    .get("#feature-bullets",{timeout:8000})
+    cy.get('[data-cel-widget="search_result_2"] a h2',{timeout:6000}).click({multiple:true});
+    cy.get("#feature-bullets",{timeout:10000})
+    .scrollIntoView()
     .should('be.visible')
+    .should('not.be.empty')
     .invoke('text')
      .then((text) => {
        cy.log(text); 
